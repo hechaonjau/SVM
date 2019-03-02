@@ -51,7 +51,7 @@ def photo(n, path0, path1):
     """
     for i in range(n):
         img = cv2.imread(path0 + '%d.jpg' % i)
-        img1 = cv2.resize(img, (512, 512))
+        img1 = cv2.resize(img, (512, 512))             # resize成（512,512）大小
         # print(img1)
         img2 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)  # 转为灰色图像（此方法只支持二维图像）
         # print(img2)
