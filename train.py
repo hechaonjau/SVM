@@ -87,7 +87,7 @@ def loadPicture(n, path):
 def texture_detect(n, radius, data):
     """
     n:训练集、测试集或验证集所含图片总数
-    path：经过处理的训练集、测试集或验证集存放路径
+    radius：半径
     data:需要提取的数据
     """
     n_point = radius * 8
